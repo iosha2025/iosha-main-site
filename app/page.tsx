@@ -292,7 +292,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
             <div className="flex items-center gap-4">
-              <Image src="/iosha-logo.png" alt="IOSHA" width={60} height={60} className="object-contain brightness-0 invert" />
+              <Image src="/iosha-logo.png" alt="IOSHA" width={120} height={120} className="object-contain brightness-0 invert" />
               <div>
                 <div className="text-white font-bold tracking-[0.2em] text-sm" style={{ fontFamily: 'var(--font-playfair)' }}>IOSHA</div>
                 <div className="text-stone-400 text-[9px] tracking-widest uppercase mt-1">International Order of Sacred Healing Arts</div>
@@ -316,7 +316,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-stone-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-stone-500 text-xs tracking-wide">© 2026 IOSHA — International Order of Sacred Healing Arts. All rights reserved.</p>
+            <p className="text-stone-500 text-xs tracking-wide">© 2025–2026 IOSHA — International Order of Sacred Healing Arts. All rights reserved.</p>
             <p className="text-stone-600 text-xs">A 508(c)(1)(A) Faith-Based Organization</p>
           </div>
         </div>
