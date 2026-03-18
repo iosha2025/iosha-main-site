@@ -158,32 +158,36 @@ export default function HomePage() {
       </section>
 
       {/* How to apply */}
-      <section className="py-24 bg-[#FCFAF8]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="h-[1px] w-12 bg-emerald-600/30"></div>
-              <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em]">How It Works</span>
-              <div className="h-[1px] w-12 bg-emerald-600/30"></div>
-            </div>
-            <h2 className="text-4xl font-bold text-stone-900 mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
-              A covenant, <span className="italic font-light">not a transaction</span>
+      <section className="py-32 bg-white border-t border-stone-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em] mb-4 block">The Process</span>
+            <h2 className="text-5xl font-bold text-stone-900" style={{ fontFamily: 'var(--font-playfair)' }}>
+              How It <span className="italic font-light">Works</span>
             </h2>
-            <p className="text-stone-500 max-w-lg mx-auto">Every application is read by a real person on the Elders Council. Ordination is granted — not sold.</p>
           </div>
-          <div className="grid md:grid-cols-4 gap-4">
-            {[
-              { step: '01', title: 'Apply', body: 'Tell us about your calling, your healing practice, and what you are here to do.' },
-              { step: '02', title: 'Background Check', body: 'All candidates complete a background check as part of our covenant of community integrity.' },
-              { step: '03', title: 'Council Review', body: 'The Elders Council personally reviews every application. This is not automated.' },
-              { step: '04', title: 'Formation & Ordination', body: 'Complete the Foundation Course and receive your credentials, Authorization Letter, and full ministerial standing.' },
-            ].map((item) => (
-              <div key={item.step} className="bg-white border border-stone-200 p-6 shadow-sm">
-                <div className="text-emerald-700 font-bold text-3xl mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>{item.step}</div>
-                <h3 className="font-bold text-stone-900 uppercase text-xs tracking-widest mb-3">{item.title}</h3>
-                <p className="text-stone-500 text-sm leading-relaxed">{item.body}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+            <div className="text-center">
+              <span className="text-6xl text-emerald-100 font-bold mb-6 block italic" style={{ fontFamily: 'var(--font-playfair)' }}>01</span>
+              <h3 className="text-2xl font-bold text-stone-900 mb-4 uppercase tracking-widest" style={{ fontFamily: 'var(--font-playfair)' }}>Invitation</h3>
+              <p className="text-stone-500 leading-relaxed">
+                Learn about IOSHA&apos;s mission, bylaws, and Statement of Fundamental Truths. Discern if you are called to serve as a healing minister.
+              </p>
+            </div>
+            <div className="text-center">
+              <span className="text-6xl text-emerald-100 font-bold mb-6 block italic" style={{ fontFamily: 'var(--font-playfair)' }}>02</span>
+              <h3 className="text-2xl font-bold text-stone-900 mb-4 uppercase tracking-widest" style={{ fontFamily: 'var(--font-playfair)' }}>Application</h3>
+              <p className="text-stone-500 leading-relaxed">
+                Submit your application to the Council with references, background verification, and ministerial credentials.
+              </p>
+            </div>
+            <div className="text-center">
+              <span className="text-6xl text-emerald-100 font-bold mb-6 block italic" style={{ fontFamily: 'var(--font-playfair)' }}>03</span>
+              <h3 className="text-2xl font-bold text-stone-900 mb-4 uppercase tracking-widest" style={{ fontFamily: 'var(--font-playfair)' }}>Ordainment</h3>
+              <p className="text-stone-500 leading-relaxed">
+                If not already ordained, complete the Foundation Ordination Course to receive your ministerial credentials through IOSHA.
+              </p>
+            </div>
           </div>
         </div>
       </section>
