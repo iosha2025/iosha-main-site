@@ -12,3 +12,12 @@
 body {
   background: #FCFAF8;
 }
+
+.btn-forest {
+  background-color: #1d5306;
+  color: white;
+  transition: background-color 0.15s;
+}
+.btn-forest:hover {
+  background-color: #122904;
+}

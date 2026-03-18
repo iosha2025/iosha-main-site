@@ -26,10 +26,7 @@ export default function HomePage() {
               </div>
             </div>
             <Link href="https://elder-portal.vercel.app/application/welcome"
-              className="px-8 py-3 text-sm font-bold tracking-widest uppercase transition-all shadow-lg text-white"
-              style={{ backgroundColor: '#1d5306' }}
-              onMouseOver={e => (e.currentTarget.style.backgroundColor = '#122904')}
-              onMouseOut={e => (e.currentTarget.style.backgroundColor = '#1d5306')}>
+              className="btn-forest px-8 py-3 text-sm font-bold tracking-widest uppercase shadow-lg">
               Apply Now
             </Link>
           </div>
