@@ -17,47 +17,53 @@ export default function HomePage() {
       {/* Nav */}
       <nav className="bg-white border-b border-stone-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-20 items-center">
-            <div className="flex items-center gap-3">
-              <Image src="/iosha-logo.png" alt="IOSHA" width={56} height={56} className="object-contain" />
+          <div className="flex justify-between h-32 items-center">
+            <div className="flex items-center gap-4">
+              <Image src="/iosha-logo.png" alt="IOSHA" width={100} height={100} className="object-contain" />
               <div className="flex flex-col">
-                <span className="text-base font-bold tracking-[0.2em] text-stone-900 leading-none" style={{ fontFamily: 'var(--font-playfair)' }}>IOSHA</span>
-                <span className="text-[9px] tracking-widest text-stone-400 font-medium uppercase mt-1">International Order of Sacred Healing Arts</span>
+                <span className="text-xl font-bold tracking-[0.2em] text-stone-900 leading-none" style={{ fontFamily: 'var(--font-playfair)' }}>IOSHA</span>
+                <span className="text-[10px] tracking-widest text-stone-400 font-medium uppercase mt-1">International Order of Sacred Healing Arts</span>
               </div>
             </div>
-            <Link href="https://elder-portal.vercel.app/application/welcome" className="bg-stone-900 text-emerald-50 px-6 py-3 text-sm font-bold tracking-widest uppercase hover:bg-emerald-900 transition-all">
-              Apply for Ordination
+            <Link href="https://elder-portal.vercel.app/application/welcome" className="bg-stone-900 text-emerald-50 px-8 py-3 text-sm font-bold tracking-widest uppercase hover:bg-emerald-900 transition-all shadow-lg">
+              Apply Now
             </Link>
           </div>
         </div>
       </nav>
 
       {/* Hero */}
-      <section className="py-32 border-b border-stone-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex items-center justify-center gap-4 mb-10">
-            <div className="h-[1px] w-12 bg-emerald-600/30"></div>
-            <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em]">Sacred Healing Arts Ordination</span>
-            <div className="h-[1px] w-12 bg-emerald-600/30"></div>
+      <section className="relative bg-[#FCFAF8] py-32 overflow-hidden border-b border-stone-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex flex-col items-center text-center">
+            <div className="flex items-center gap-4 mb-10">
+              <div className="h-[1px] w-12 bg-emerald-600/30"></div>
+              <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em]">Ordination Candidate Portal</span>
+              <div className="h-[1px] w-12 bg-emerald-600/30"></div>
+            </div>
+            <h1 className="text-6xl md:text-8xl font-bold text-stone-900 mb-8 max-w-5xl leading-[1.05]" style={{ fontFamily: 'var(--font-playfair)' }}>
+              The Path to <span className="italic font-light">Sacred Ministry</span>
+            </h1>
+            <p className="text-xl text-stone-500 mb-14 leading-relaxed max-w-2xl" style={{ fontFamily: 'var(--font-playfair)' }}>
+              Establishing, protecting, and nurturing sacred healing ministries that honor diverse spiritual traditions.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6">
+              <Link href="https://elder-portal.vercel.app/application/welcome" className="bg-stone-900 text-emerald-50 px-12 py-5 font-bold text-sm tracking-[0.2em] uppercase hover:bg-emerald-900 transition-all shadow-2xl">
+                Begin Your Application
+              </Link>
+              <a href="#who" className="border border-stone-200 text-stone-900 px-12 py-5 font-bold text-sm tracking-[0.2em] uppercase hover:bg-stone-50 transition-all">
+                Learn More
+              </a>
+            </div>
           </div>
-          <h1 className="text-6xl md:text-7xl font-bold text-stone-900 mb-8 leading-tight" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Your work is sacred.<br /><span className="italic font-light">Now make it official.</span>
-          </h1>
-          <p className="text-xl text-stone-600 max-w-2xl mx-auto mb-4 leading-relaxed">
-            IOSHA ordains energy healers, herbalists, ceremonial ministers, and all healing practitioners — giving your calling recognized credentials and a real community.
-          </p>
-          <p className="text-base text-stone-400 italic mb-12" style={{ fontFamily: 'var(--font-playfair)' }}>
-            No dogma required. No single tradition. Just a shared commitment to healing.
-          </p>
-          <Link href="https://elder-portal.vercel.app/application/welcome" className="bg-stone-900 text-emerald-50 px-14 py-5 text-sm font-bold tracking-widest uppercase hover:bg-emerald-900 transition-all shadow-lg inline-block">
-            Apply for Ordination
-          </Link>
-          <p className="text-stone-400 text-sm mt-5">Applications personally reviewed — not automated</p>
+        </div>
+        <div className="absolute top-1/2 left-0 -translate-y-1/2 opacity-[0.03] pointer-events-none select-none">
+          <div className="text-[200px] font-bold leading-none" style={{ fontFamily: 'var(--font-playfair)' }}>IOSHA</div>
         </div>
       </section>
 
       {/* Who it's for */}
-      <section className="py-24 bg-stone-900">
+      <section id="who" className="py-24 bg-stone-900">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="h-[1px] w-12 bg-emerald-500/40"></div>
