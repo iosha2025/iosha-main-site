@@ -14,28 +14,29 @@ const WHO_ITS_FOR = [
   'Indigenous & Traditional Medicine Holders',
 ]
 
-const WHAT_YOU_RECEIVE = [
-  { title: 'Ordination Certificate', description: 'Recognized ecclesiastical credentials as an ordained minister of sacred healing arts — your covenant standing in the assembly' },
-  { title: 'Letter of Direction', description: 'Defines the scope of your healing ministry — presented to banks, landlords, and institutions as your stewardship credential' },
-  { title: 'Private Faith Assembly', description: 'Your covenant community operates as a sacred assembly — those you serve are covenant holders and congregants, not customers' },
-  { title: '508(c)(1)(A) Standing', description: 'Your ministry operates as a Faith-Based Organization with automatic tax-exempt status — no government application required' },
-  { title: 'Covenant Framework', description: 'Complete covenant documentation — participation covenants, assembly guidelines, and stewardship standards for your ministry' },
-  { title: 'Foundation Course', description: 'Six weeks of ministry formation — theology, church governance, stewardship, banking, and pastoral practice' },
+const ORDINATION_LEVELS = [
+  {
+    level: 'Deacon',
+    description: 'Entry into ordained service — credentials, Letter of Direction, and the foundation course. The beginning of your ministerial journey.',
+  },
+  {
+    level: 'Minister',
+    description: 'Full ministerial standing — recognized clergy credentials in all 50 states, authority to perform ceremonies, and complete covenant framework for your assembly.',
+    featured: true,
+  },
+  {
+    level: 'Reverend',
+    description: 'Senior ministerial standing — advanced formation, expanded scope of ministry, and leadership recognition within the IOSHA assembly.',
+  },
 ]
 
-const PILLARS = [
-  {
-    title: 'Sacred Calling',
-    body: 'IOSHA recognizes that healing is not merely a profession — it is a vocation. We ordain those called to serve others through the sacred healing arts as ministers of that calling.'
-  },
-  {
-    title: 'Covenant Community',
-    body: 'Every IOSHA minister is part of a covenant assembly — a fellowship of practitioners who share theological commitments, ethical standards, and a common understanding of healing as sacred service.'
-  },
-  {
-    title: 'Ecclesiastical Standing',
-    body: 'Our ordination is grounded in real ecclesiastical authority — apostolic succession, documented lineage, and a 508(c)(1)(A) Faith-Based Organization structure established in Florida.'
-  },
+const WHAT_IOSHA_PROVIDES = [
+  { title: 'Ordination Credentials', description: 'Official IOSHA ordination certificate, credential number, and clergy standing recognized in all 50 states' },
+  { title: 'Letter of Direction', description: 'Your personal ministerial scope document — presented to banks, landlords, and institutions as your stewardship credential' },
+  { title: 'Foundation Course', description: 'Six weeks of ministerial formation — theology, healing modalities, church governance, covenant framework, and pastoral practice' },
+  { title: 'Covenant Templates', description: 'Participation covenants, assembly guidelines, and stewardship standards — everything you need to establish your Private Faith Assembly' },
+  { title: 'State-by-State Guidance', description: 'What you may and may not say and do in ministry — by state — so you walk faithfully and clearly in your calling' },
+  { title: 'Ongoing Standing', description: 'Annual covenant reaffirmation keeps your credentials current and your standing in the IOSHA assembly active' },
 ]
 
 export default function HomePage() {
@@ -73,10 +74,10 @@ export default function HomePage() {
             <div className="h-[1px] w-16 bg-emerald-600/30"></div>
           </div>
           <h1 className="text-6xl md:text-7xl font-bold text-stone-900 mb-8 leading-tight" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Answering the Call<br /><span className="italic font-light">to Healing Ministry</span>
+            Answer Your Calling<br /><span className="italic font-light">to Healing Ministry</span>
           </h1>
           <p className="text-xl text-stone-600 max-w-3xl mx-auto mb-6 leading-relaxed">
-            IOSHA is an ecclesiastical assembly ordaining those called to sacred healing arts — recognizing healing not as a service, but as a ministry of sacred covenant and care.
+            IOSHA ordains, educates, and equips healing practitioners as recognized ministers of sacred healing arts — providing the ecclesiastical standing and ministerial formation to walk faithfully in your calling.
           </p>
           <p className="text-lg text-stone-500 italic max-w-2xl mx-auto mb-12" style={{ fontFamily: 'var(--font-playfair)' }}>
             All authentic ministry is healing ministry.
@@ -101,17 +102,21 @@ export default function HomePage() {
             <div className="h-[1px] w-12 bg-emerald-500/40"></div>
           </div>
           <h2 className="text-4xl font-bold text-white mb-8" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Recognizing Healing as <span className="italic font-light text-emerald-400">Sacred Service</span>
+            Ordain. Educate. <span className="italic font-light text-emerald-400">Equip.</span>
           </h2>
           <p className="text-lg text-stone-300 max-w-3xl mx-auto mb-6 leading-relaxed">
-            IOSHA exists to ordain, equip, and support those called to sacred healing ministry — providing the ecclesiastical standing, covenant framework, and ministerial formation needed to walk faithfully in that calling.
+            IOSHA exists to recognize, ordain, and form those called to sacred healing ministry. We provide the theological education, ministerial credentials, and covenant framework to serve your community with clarity, integrity, and genuine spiritual authority.
           </p>
           <p className="text-stone-400 max-w-2xl mx-auto leading-relaxed">
             We believe the healer, the herbalist, the sound worker, the counselor, and the ceremonial minister are all expressions of one sacred call — to serve the wholeness of those entrusted to their care.
           </p>
-          <div className="grid md:grid-cols-3 gap-6 mt-16">
-            {PILLARS.map((p) => (
-              <div key={p.title} className="border border-stone-700 p-8 text-left">
+          <div className="grid md:grid-cols-3 gap-6 mt-16 text-left">
+            {[
+              { title: 'Ordination', body: 'We recognize and confer ordained ministerial standing — real ecclesiastical credentials grounded in apostolic succession and documented lineage, recognized in all 50 states.' },
+              { title: 'Education', body: 'Our foundation course and ongoing ministerial formation equip you with the theology, ethics, governance, and pastoral skills to serve faithfully in your calling.' },
+              { title: 'Covenant Community', body: 'Every IOSHA minister is part of a covenant assembly — a fellowship of practitioners sharing theological commitments, ethical standards, and a common understanding of healing as sacred service.' },
+            ].map((p) => (
+              <div key={p.title} className="border border-stone-700 p-8">
                 <h3 className="font-bold text-emerald-400 uppercase text-xs tracking-widest mb-4">{p.title}</h3>
                 <p className="text-stone-300 leading-relaxed text-sm">{p.body}</p>
               </div>
@@ -145,23 +150,50 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* What You Receive */}
+      {/* Ordination Levels */}
       <section id="ordination" className="py-24 bg-[#FCFAF8]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-[1px] w-12 bg-emerald-600/30"></div>
+              <span className="text-emerald-700 text-xs font-bold uppercase tracking-[0.4em]">Ordination Pathway</span>
+              <div className="h-[1px] w-12 bg-emerald-600/30"></div>
+            </div>
+            <h2 className="text-4xl font-bold text-stone-900 mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+              Three Levels of <span className="italic font-light">Ordained Standing</span>
+            </h2>
+            <p className="text-stone-500 max-w-xl mx-auto">Each level of ordination confers deeper formation, broader ministerial scope, and greater standing within the IOSHA assembly.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {ORDINATION_LEVELS.map((item) => (
+              <div key={item.level} className={`p-8 border ${item.featured ? 'border-emerald-600 bg-emerald-50/40 shadow-md' : 'border-stone-200 bg-white shadow-sm'}`}>
+                {item.featured && <div className="text-emerald-700 text-xs font-bold uppercase tracking-widest mb-3">Most Common</div>}
+                <span className="text-emerald-600 text-lg mb-4 block">✦</span>
+                <h3 className="font-bold text-stone-900 mb-3 uppercase text-sm tracking-widest" style={{ fontFamily: 'var(--font-playfair)' }}>{item.level}</h3>
+                <p className="text-stone-600 text-sm leading-relaxed">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What IOSHA Provides */}
+      <section className="py-24 bg-white border-t border-stone-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="h-[1px] w-12 bg-emerald-600/30"></div>
-              <span className="text-emerald-700 text-xs font-bold uppercase tracking-[0.4em]">Ordination</span>
+              <span className="text-emerald-700 text-xs font-bold uppercase tracking-[0.4em]">What IOSHA Provides</span>
               <div className="h-[1px] w-12 bg-emerald-600/30"></div>
             </div>
             <h2 className="text-4xl font-bold text-stone-900 mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
-              What Ordination <span className="italic font-light">Provides</span>
+              Credentials, Formation <span className="italic font-light">& Framework</span>
             </h2>
-            <p className="text-stone-500 max-w-xl mx-auto">Full ministerial standing within an ecclesiastically grounded assembly — with the covenant framework and credentials to walk faithfully in your calling.</p>
+            <p className="text-stone-500 max-w-xl mx-auto">IOSHA provides ordination, education, and covenant templates. For implementation support — entity formation, banking, and structure setup — the Sacred Ministry Council walks alongside you.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {WHAT_YOU_RECEIVE.map((item) => (
-              <div key={item.title} className="bg-white border border-stone-200 p-8 shadow-sm">
+            {WHAT_IOSHA_PROVIDES.map((item) => (
+              <div key={item.title} className="bg-[#FCFAF8] border border-stone-200 p-8 shadow-sm">
                 <span className="text-emerald-600 text-lg mb-4 block">✦</span>
                 <h3 className="font-bold text-stone-900 mb-3 uppercase text-xs tracking-widest">{item.title}</h3>
                 <p className="text-stone-600 text-sm leading-relaxed">{item.description}</p>
@@ -171,8 +203,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Ecclesiastical Grounding */}
-      <section className="py-24 bg-white border-t border-stone-200">
+      {/* Ecclesiastical Standing */}
+      <section className="py-24 bg-[#FCFAF8] border-t border-stone-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="h-[1px] w-12 bg-emerald-600/30"></div>
@@ -182,14 +214,14 @@ export default function HomePage() {
           <h2 className="text-4xl font-bold text-stone-900 mb-8" style={{ fontFamily: 'var(--font-playfair)' }}>
             Grounded in <span className="italic font-light">Real Authority</span>
           </h2>
-          <div className="space-y-6 text-left max-w-3xl mx-auto">
+          <div className="space-y-4 text-left">
             {[
-              { label: 'Apostolic Succession', value: 'IOSHA ordination is grounded in documented ecclesiastical lineage — real church authority, not a certificate mill.' },
-              { label: '508(c)(1)(A) Faith-Based Organization', value: 'Established as a Florida FBO operating under 508(c)(1)(A) — your ministry benefits from automatic tax-exempt standing as an integrated auxiliary.' },
-              { label: 'Nationwide Covenant Standing', value: 'Your Letter of Direction and ordination credentials are recognized in all 50 states as evidence of your ministerial calling and scope.' },
-              { label: 'Private Faith Assembly Structure', value: 'Those you serve enter into covenant fellowship with your assembly — a sacred relationship governed by covenant principles, not commercial terms.' },
+              { label: 'Apostolic Succession', value: 'IOSHA ordination is grounded in documented ecclesiastical lineage — real church authority with recognized standing.' },
+              { label: '508(c)(1)(A) Faith-Based Organization', value: 'Established as a Florida FBO — your ministry benefits from automatic tax-exempt standing as an integrated auxiliary of the IOSHA assembly.' },
+              { label: 'Nationwide Ministerial Standing', value: 'Your Letter of Direction and ordination credentials are recognized in all 50 states as evidence of your calling and ministerial scope.' },
+              { label: 'Private Faith Assembly Framework', value: 'Those you serve enter into covenant fellowship with your assembly — a sacred relationship governed by covenant principles.' },
             ].map((item) => (
-              <div key={item.label} className="bg-[#FCFAF8] border border-stone-200 p-8 flex gap-6">
+              <div key={item.label} className="bg-white border border-stone-200 p-8 flex gap-6 shadow-sm">
                 <span className="text-emerald-600 font-bold text-lg mt-0.5">✦</span>
                 <div>
                   <h3 className="font-bold text-stone-900 uppercase text-xs tracking-widest mb-2">{item.label}</h3>
