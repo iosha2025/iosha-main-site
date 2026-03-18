@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-iosha: #1d5306;
+  --color-iosha:        #1d5306;  /* forest green — primary brand */
+  --color-iosha-deep:   #122904;  /* dark forest — section backgrounds */
+  --color-iosha-sage:   #4a7038;  /* medium sage — hover states */
+  --color-iosha-muted:  #8fa882;  /* muted sage — text on dark */
+  --color-iosha-pale:   #c4d9bb;  /* pale sage — lighter text on dark */
+  --color-iosha-mist:   #e8f0e4;  /* sage mist — light bg accent */
 }
 
 body {
