@@ -67,14 +67,14 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="h-[1px] w-12 bg-emerald-500/40"></div>
-            <span className="text-emerald-400 text-xs font-bold uppercase tracking-[0.4em]">Who We Ordain</span>
+            <span className="text-emerald-400 text-xs font-bold uppercase tracking-[0.4em]">Is This for You?</span>
             <div className="h-[1px] w-12 bg-emerald-500/40"></div>
           </div>
           <h2 className="text-4xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Ordination for those <span className="italic font-light text-emerald-400">called to this work</span>
+            The Path to <span className="italic font-light text-emerald-400">Sacred Fellowship</span>
           </h2>
           <p className="text-stone-400 max-w-xl mx-auto mb-14 leading-relaxed">
-            IOSHA ordains across healing traditions — but ordination is not automatic. Every candidate is reviewed and approved by the Elders Council. If this is your calling, we invite you to apply.
+            Establishing, protecting, and nurturing sacred healing ministries that honor diverse spiritual traditions — through a covenant process of application and council approval.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
             {HEALING_ARTS.map((art) => (
