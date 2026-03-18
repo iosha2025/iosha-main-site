@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --color-iosha: #1d5306;
+}
+
 body {
   background: #FCFAF8;
 }

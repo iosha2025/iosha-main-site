@@ -21,7 +21,7 @@ export default function HomePage() {
             <div className="flex items-center gap-4">
               <Image src="/iosha-logo.png" alt="IOSHA" width={100} height={100} className="object-contain" />
               <div className="flex flex-col">
-                <span className="text-xl font-bold tracking-[0.2em] text-stone-900 leading-none" style={{ fontFamily: 'var(--font-playfair)' }}>IOSHA</span>
+                <span className="text-xl font-bold tracking-[0.2em] text-emerald-950 leading-none" style={{ fontFamily: 'var(--font-playfair)' }}>IOSHA</span>
                 <span className="text-[10px] tracking-widest text-stone-400 font-medium uppercase mt-1">International Order of Sacred Healing Arts</span>
               </div>
             </div>
@@ -37,21 +37,21 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col items-center text-center">
             <div className="flex items-center gap-4 mb-10">
-              <div className="h-[1px] w-12 bg-emerald-700/30"></div>
-              <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em]">Ordination Candidate Portal</span>
-              <div className="h-[1px] w-12 bg-emerald-700/30"></div>
+              <div className="h-[1px] w-12 bg-iosha/20"></div>
+              <span className="text-iosha text-xs font-bold uppercase tracking-[0.4em]">Ordination Candidate Portal</span>
+              <div className="h-[1px] w-12 bg-iosha/20"></div>
             </div>
-            <h1 className="text-6xl md:text-8xl font-bold text-stone-900 mb-8 max-w-5xl leading-[1.05]" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h1 className="text-6xl md:text-8xl font-bold text-emerald-950 mb-8 max-w-5xl leading-[1.05]" style={{ fontFamily: 'var(--font-playfair)' }}>
               The Path to <span className="italic font-light">Sacred Ministry</span>
             </h1>
-            <p className="text-xl text-stone-500 mb-14 leading-relaxed max-w-2xl" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <p className="text-xl text-stone-600 mb-14 leading-relaxed max-w-2xl" style={{ fontFamily: 'var(--font-playfair)' }}>
               Establishing, protecting, and nurturing sacred healing ministries that honor diverse spiritual traditions.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <Link href="https://elder-portal.vercel.app/application/welcome" className="bg-emerald-900 text-white px-12 py-5 font-bold text-sm tracking-[0.2em] uppercase hover:bg-emerald-800 transition-all shadow-2xl">
                 Begin Your Application
               </Link>
-              <a href="#who" className="border border-emerald-800 text-emerald-900 px-12 py-5 font-bold text-sm tracking-[0.2em] uppercase hover:bg-emerald-50 transition-all">
+              <a href="#who" className="border border-iosha text-iosha px-12 py-5 font-bold text-sm tracking-[0.2em] uppercase hover:bg-emerald-50 transition-all">
                 Learn More
               </a>
             </div>
@@ -93,11 +93,11 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="h-[1px] w-12 bg-emerald-700/30"></div>
-              <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em]">What Ordination Gives You</span>
-              <div className="h-[1px] w-12 bg-emerald-700/30"></div>
+              <div className="h-[1px] w-12 bg-iosha/20"></div>
+              <span className="text-iosha text-xs font-bold uppercase tracking-[0.4em]">What Ordination Gives You</span>
+              <div className="h-[1px] w-12 bg-iosha/20"></div>
             </div>
-            <h2 className="text-4xl font-bold text-stone-900 mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-4xl font-bold text-emerald-950 mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
               Credentials, community, <span className="italic font-light">and clarity</span>
             </h2>
           </div>
@@ -122,9 +122,9 @@ export default function HomePage() {
                 body: 'You are not ordained and abandoned. Annual covenant reaffirmation keeps your credentials current, and the IOSHA network keeps you connected to peers who understand this work.',
               },
             ].map((item) => (
-              <div key={item.title} className="bg-[#FCFAF8] border border-emerald-100 p-8">
-                <span className="text-emerald-700 text-lg mb-4 block">✦</span>
-                <h3 className="font-bold text-stone-900 mb-3 text-sm tracking-wide">{item.title}</h3>
+              <div key={item.title} className="bg-[#FCFAF8] border border-iosha/20 p-8">
+                <span className="text-iosha text-lg mb-4 block">✦</span>
+                <h3 className="font-bold text-emerald-950 mb-3 text-sm tracking-wide">{item.title}</h3>
                 <p className="text-stone-600 text-sm leading-relaxed">{item.body}</p>
               </div>
             ))}
@@ -161,30 +161,30 @@ export default function HomePage() {
       <section className="py-32 bg-white border-t border-stone-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em] mb-4 block">The Process</span>
-            <h2 className="text-5xl font-bold text-stone-900" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <span className="text-iosha text-xs font-bold uppercase tracking-[0.4em] mb-4 block">The Process</span>
+            <h2 className="text-5xl font-bold text-emerald-950" style={{ fontFamily: 'var(--font-playfair)' }}>
               How It <span className="italic font-light">Works</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             <div className="text-center">
               <span className="text-6xl text-emerald-200 font-bold mb-6 block italic" style={{ fontFamily: 'var(--font-playfair)' }}>01</span>
-              <h3 className="text-2xl font-bold text-stone-900 mb-4 uppercase tracking-widest" style={{ fontFamily: 'var(--font-playfair)' }}>Invitation</h3>
-              <p className="text-stone-500 leading-relaxed">
+              <h3 className="text-2xl font-bold text-emerald-950 mb-4 uppercase tracking-widest" style={{ fontFamily: 'var(--font-playfair)' }}>Invitation</h3>
+              <p className="text-stone-600 leading-relaxed">
                 Learn about IOSHA&apos;s mission, bylaws, and Statement of Fundamental Truths. Discern if you are called to serve as a healing minister.
               </p>
             </div>
             <div className="text-center">
               <span className="text-6xl text-emerald-200 font-bold mb-6 block italic" style={{ fontFamily: 'var(--font-playfair)' }}>02</span>
-              <h3 className="text-2xl font-bold text-stone-900 mb-4 uppercase tracking-widest" style={{ fontFamily: 'var(--font-playfair)' }}>Application</h3>
-              <p className="text-stone-500 leading-relaxed">
+              <h3 className="text-2xl font-bold text-emerald-950 mb-4 uppercase tracking-widest" style={{ fontFamily: 'var(--font-playfair)' }}>Application</h3>
+              <p className="text-stone-600 leading-relaxed">
                 Submit your application to the Council with references, background verification, and ministerial credentials.
               </p>
             </div>
             <div className="text-center">
               <span className="text-6xl text-emerald-200 font-bold mb-6 block italic" style={{ fontFamily: 'var(--font-playfair)' }}>03</span>
-              <h3 className="text-2xl font-bold text-stone-900 mb-4 uppercase tracking-widest" style={{ fontFamily: 'var(--font-playfair)' }}>Ordainment</h3>
-              <p className="text-stone-500 leading-relaxed">
+              <h3 className="text-2xl font-bold text-emerald-950 mb-4 uppercase tracking-widest" style={{ fontFamily: 'var(--font-playfair)' }}>Ordainment</h3>
+              <p className="text-stone-600 leading-relaxed">
                 If not already ordained, complete the Foundation Ordination Course to receive your ministerial credentials through IOSHA.
               </p>
             </div>
