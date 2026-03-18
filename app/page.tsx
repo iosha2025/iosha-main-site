@@ -58,10 +58,10 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex items-center gap-6">
-              <a href="#mission" className="text-stone-500 hover:text-emerald-700 text-sm font-semibold tracking-widest uppercase transition-colors hidden md:block">Mission</a>
-              <a href="#ordination" className="text-stone-500 hover:text-emerald-700 text-sm font-semibold tracking-widest uppercase transition-colors hidden md:block">Ordination</a>
-              <Link href="https://ministerportal.vercel.app" className="bg-stone-900 text-emerald-50 px-6 py-3 text-sm font-bold tracking-widest uppercase hover:bg-emerald-700 transition-all">
-                Enter Portal
+              <a href="#mission" className="text-stone-500 hover:text-emerald-800 text-sm font-semibold tracking-widest uppercase transition-colors hidden md:block">Mission</a>
+              <a href="#ordination" className="text-stone-500 hover:text-emerald-800 text-sm font-semibold tracking-widest uppercase transition-colors hidden md:block">Ordination</a>
+              <Link href="https://elder-portal.vercel.app/application/welcome" className="bg-stone-900 text-emerald-50 px-6 py-3 text-sm font-bold tracking-widest uppercase hover:bg-emerald-900 transition-all">
+                Apply
               </Link>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-4 mb-10">
             <div className="h-[1px] w-16 bg-emerald-600/30"></div>
-            <span className="text-emerald-700 text-xs font-bold uppercase tracking-[0.4em]">International Order of Sacred Healing Arts</span>
+            <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em]">International Order of Sacred Healing Arts</span>
             <div className="h-[1px] w-16 bg-emerald-600/30"></div>
           </div>
           <h1 className="text-6xl md:text-7xl font-bold text-stone-900 mb-8 leading-tight" style={{ fontFamily: 'var(--font-playfair)' }}>
@@ -86,10 +86,10 @@ export default function HomePage() {
             United by a shared covenant of healing, not by blood or political jurisdiction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="https://ministerportal.vercel.app/auth/signup" className="bg-stone-900 text-emerald-50 px-12 py-5 text-sm font-bold tracking-widest uppercase hover:bg-emerald-700 transition-all shadow-lg">
-              Begin Your Ordination
+            <Link href="https://elder-portal.vercel.app/application/welcome" className="bg-stone-900 text-emerald-50 px-12 py-5 text-sm font-bold tracking-widest uppercase hover:bg-emerald-900 transition-all shadow-lg">
+              Apply for Ordination
             </Link>
-            <a href="#mission" className="border border-stone-300 text-stone-700 px-12 py-5 text-sm font-bold tracking-widest uppercase hover:border-emerald-600 hover:text-emerald-700 transition-all">
+            <a href="#mission" className="border border-stone-300 text-stone-700 px-12 py-5 text-sm font-bold tracking-widest uppercase hover:border-emerald-700 hover:text-emerald-800 transition-all">
               Our Mission
             </a>
           </div>
@@ -132,7 +132,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="h-[1px] w-12 bg-emerald-600/30"></div>
-              <span className="text-emerald-700 text-xs font-bold uppercase tracking-[0.4em]">Statement of Fundamental Truths</span>
+              <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em]">Statement of Fundamental Truths</span>
               <div className="h-[1px] w-12 bg-emerald-600/30"></div>
             </div>
             <h2 className="text-4xl font-bold text-stone-900 mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
@@ -142,7 +142,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-6">
             {FUNDAMENTAL_TRUTHS.map((truth) => (
               <div key={truth.title} className="bg-[#FCFAF8] border border-stone-200 p-8">
-                <span className="text-emerald-600 text-lg mb-4 block">✦</span>
+                <span className="text-emerald-700 text-lg mb-4 block">✦</span>
                 <h3 className="font-bold text-stone-900 mb-3 uppercase text-xs tracking-widest">{truth.title}</h3>
                 <p className="text-stone-600 leading-relaxed text-sm">{truth.body}</p>
               </div>
@@ -157,7 +157,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="h-[1px] w-12 bg-emerald-600/30"></div>
-              <span className="text-emerald-700 text-xs font-bold uppercase tracking-[0.4em]">Ordination Pathway</span>
+              <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em]">Ordination Pathway</span>
               <div className="h-[1px] w-12 bg-emerald-600/30"></div>
             </div>
             <h2 className="text-4xl font-bold text-stone-900 mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
@@ -167,9 +167,9 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {ORDINATION_LEVELS.map((item) => (
-              <div key={item.level} className={`p-8 border ${item.featured ? 'border-emerald-600 bg-emerald-50/40 shadow-md' : 'border-stone-200 bg-white shadow-sm'}`}>
-                {item.featured && <div className="text-emerald-700 text-xs font-bold uppercase tracking-widest mb-3">Most Common Entry</div>}
-                <span className="text-emerald-600 text-lg mb-4 block">✦</span>
+              <div key={item.level} className={`p-8 border ${item.featured ? 'border-emerald-700 bg-emerald-50/40 shadow-md' : 'border-stone-200 bg-white shadow-sm'}`}>
+                {item.featured && <div className="text-emerald-800 text-xs font-bold uppercase tracking-widest mb-3">Most Common Entry</div>}
+                <span className="text-emerald-700 text-lg mb-4 block">✦</span>
                 <h3 className="font-bold text-stone-900 mb-3 uppercase text-sm tracking-widest" style={{ fontFamily: 'var(--font-playfair)' }}>{item.level}</h3>
                 <p className="text-stone-600 text-sm leading-relaxed">{item.description}</p>
               </div>
@@ -184,7 +184,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="h-[1px] w-12 bg-emerald-600/30"></div>
-              <span className="text-emerald-700 text-xs font-bold uppercase tracking-[0.4em]">What IOSHA Provides</span>
+              <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em]">What IOSHA Provides</span>
               <div className="h-[1px] w-12 bg-emerald-600/30"></div>
             </div>
             <h2 className="text-4xl font-bold text-stone-900 mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
@@ -194,7 +194,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {WHAT_IOSHA_PROVIDES.map((item) => (
               <div key={item.title} className="bg-[#FCFAF8] border border-stone-200 p-8 shadow-sm">
-                <span className="text-emerald-600 text-lg mb-4 block">✦</span>
+                <span className="text-emerald-700 text-lg mb-4 block">✦</span>
                 <h3 className="font-bold text-stone-900 mb-3 uppercase text-xs tracking-widest">{item.title}</h3>
                 <p className="text-stone-600 text-sm leading-relaxed">{item.description}</p>
               </div>
@@ -208,7 +208,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="h-[1px] w-12 bg-emerald-600/30"></div>
-            <span className="text-emerald-700 text-xs font-bold uppercase tracking-[0.4em]">Ecclesiastical Foundation</span>
+            <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em]">Ecclesiastical Foundation</span>
             <div className="h-[1px] w-12 bg-emerald-600/30"></div>
           </div>
           <h2 className="text-4xl font-bold text-stone-900 mb-8" style={{ fontFamily: 'var(--font-playfair)' }}>
@@ -222,7 +222,7 @@ export default function HomePage() {
               { label: 'Private Faith Assembly Framework', value: 'Those you serve enter into covenant fellowship with your assembly — a sacred relationship governed by covenant principles, not commercial terms.' },
             ].map((item) => (
               <div key={item.label} className="bg-white border border-stone-200 p-8 flex gap-6 shadow-sm">
-                <span className="text-emerald-600 font-bold text-lg mt-0.5">✦</span>
+                <span className="text-emerald-700 font-bold text-lg mt-0.5">✦</span>
                 <div>
                   <h3 className="font-bold text-stone-900 uppercase text-xs tracking-widest mb-2">{item.label}</h3>
                   <p className="text-stone-600 leading-relaxed">{item.value}</p>
@@ -233,8 +233,41 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Application Process */}
+      <section className="py-24 bg-stone-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-[1px] w-12 bg-emerald-500/40"></div>
+              <span className="text-emerald-400 text-xs font-bold uppercase tracking-[0.4em]">The Path to Ordination</span>
+              <div className="h-[1px] w-12 bg-emerald-500/40"></div>
+            </div>
+            <h2 className="text-4xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+              A Covenant, <span className="italic font-light text-emerald-400">Not a Transaction</span>
+            </h2>
+            <p className="text-stone-400 max-w-2xl mx-auto">
+              IOSHA ordination is granted through a covenant relationship. Every candidate is reviewed by the Elders Council before ordination is conferred.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-4 gap-4">
+            {[
+              { step: '01', title: 'Submit Application', body: 'Share your calling, healing practice, and ministerial intent. Tell us who you are and what you are being called to do.' },
+              { step: '02', title: 'Background Review', body: 'All candidates complete a background check as part of our covenant of integrity and community trust.' },
+              { step: '03', title: 'Council Approval', body: 'The Elders Council reviews each application. Ordination is granted by the council — not automatically upon registration.' },
+              { step: '04', title: 'Formation & Ordination', body: 'Upon approval, complete the Foundation Course and receive your ordination credentials, Letter of Direction, and full ministerial standing.' },
+            ].map((item) => (
+              <div key={item.step} className="border border-stone-700 p-6">
+                <div className="text-emerald-500 font-bold text-3xl mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>{item.step}</div>
+                <h3 className="font-bold text-white uppercase text-xs tracking-widest mb-3">{item.title}</h3>
+                <p className="text-stone-400 text-sm leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="py-32 bg-emerald-700">
+      <section className="py-32 bg-emerald-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="h-[1px] w-12 bg-emerald-500/50"></div>
@@ -245,12 +278,12 @@ export default function HomePage() {
             Walk in Your <span className="italic font-light">Calling</span>
           </h2>
           <p className="text-emerald-100 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
-            Create your account in the Minister Portal, complete the foundation course, and receive your ordination credentials and Letter of Direction.
+            If you feel called to minister, apply. Share your heart and your practice. The Elders Council reviews every application personally.
           </p>
-          <Link href="https://ministerportal.vercel.app/auth/signup" className="bg-white text-emerald-800 px-12 py-5 text-sm font-bold tracking-widest uppercase hover:bg-emerald-50 transition-all shadow-lg inline-block">
-            Begin Your Ordination
+          <Link href="https://elder-portal.vercel.app/application/welcome" className="bg-white text-emerald-800 px-12 py-5 text-sm font-bold tracking-widest uppercase hover:bg-emerald-50 transition-all shadow-lg inline-block">
+            Apply for Ordination
           </Link>
-          <p className="text-emerald-200 text-sm mt-6">Currently accepting covenant participants — entry by invitation code</p>
+          <p className="text-emerald-200 text-sm mt-6">Applications reviewed by the Elders Council — not automated</p>
         </div>
       </section>
 
@@ -259,7 +292,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
             <div className="flex items-center gap-4">
-              <Image src="/iosha-logo.png" alt="IOSHA" width={60} height={60} className="object-contain" />
+              <Image src="/iosha-logo.png" alt="IOSHA" width={60} height={60} className="object-contain brightness-0 invert" />
               <div>
                 <div className="text-white font-bold tracking-[0.2em] text-sm" style={{ fontFamily: 'var(--font-playfair)' }}>IOSHA</div>
                 <div className="text-stone-400 text-[9px] tracking-widest uppercase mt-1">International Order of Sacred Healing Arts</div>
