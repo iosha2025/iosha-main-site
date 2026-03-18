@@ -1,17 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const WHO_ITS_FOR = [
-  'Energy Healers & Reiki Practitioners',
-  'Herbalists & Plant Medicine Ministers',
-  'Sound Healers & Vibrational Practitioners',
-  'Somatic & Body-Centered Practitioners',
-  'Spiritual Counselors & Pastoral Care Ministers',
-  'Ceremonial Ministers — Weddings, Memorials, Blessings',
-  'Naturopaths & Holistic Health Practitioners',
-  'Trauma-Informed Healing Ministers',
-  'Life Coaches Transitioning to Ministry',
-  'Indigenous & Traditional Medicine Holders',
+const HEALING_ARTS = [
+  { title: 'Energy Healing', description: 'Reiki, pranic healing, biofield therapy, chakra balancing, frequency medicine' },
+  { title: 'Sanctified Healing', description: 'Prayer, anointing, laying-on-of-hands, intention, spiritual invocation' },
+  { title: 'Quantum Healing', description: 'Consciousness-based healing, vibrational medicine, sound therapy, light work' },
+  { title: 'Earth-Based Healing', description: 'Herbal medicine, plant spirit work, elemental healing, sacred ceremony' },
+  { title: 'Somatic & Embodied Healing', description: 'Breathwork, movement, trauma release, nervous system regulation' },
+  { title: 'Ceremonial Ministry', description: 'Weddings, memorials, blessings, rites of passage, sacred ceremony' },
 ]
 
 const ORDINATION_LEVELS = [
@@ -37,6 +33,13 @@ const WHAT_IOSHA_PROVIDES = [
   { title: 'Covenant Templates', description: 'Participation covenants, assembly guidelines, and stewardship standards — everything you need to establish your Private Faith Assembly' },
   { title: 'State-by-State Guidance', description: 'What you may and may not say and do in ministry — by state — so you walk faithfully and clearly in your calling' },
   { title: 'Ongoing Standing', description: 'Annual covenant reaffirmation keeps your credentials current and your standing in the IOSHA assembly active' },
+]
+
+const FUNDAMENTAL_TRUTHS = [
+  { title: 'The Sacred Source', body: 'We believe in a loving, healing Divine Presence — known by many names and honored in many traditions: God, Goddess, Spirit, Source, Creator, Great Mystery, Universal Consciousness, Divine Love.' },
+  { title: 'The Sacredness of All Life', body: 'Every person, creature, plant, and element is sacred and interconnected. Healing one heals the whole.' },
+  { title: 'The Divine Nature of Healing', body: 'Healing is a sacred gift flowing from Spirit. The healer is a vessel, not the source — a channel of the Divine\'s love and restoration.' },
+  { title: 'Mother Earth as Sacred Teacher', body: 'We honor the Earth as a living, conscious being. Earth-based healing arts are sacred expressions of our covenant with creation.' },
 ]
 
 export default function HomePage() {
@@ -74,13 +77,13 @@ export default function HomePage() {
             <div className="h-[1px] w-16 bg-emerald-600/30"></div>
           </div>
           <h1 className="text-6xl md:text-7xl font-bold text-stone-900 mb-8 leading-tight" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Answer Your Calling<br /><span className="italic font-light">to Healing Ministry</span>
+            Awaken. Train. Ordain.<br /><span className="italic font-light">Walk in Sacred Service.</span>
           </h1>
           <p className="text-xl text-stone-600 max-w-3xl mx-auto mb-6 leading-relaxed">
-            IOSHA ordains, educates, and equips healing practitioners as recognized ministers of sacred healing arts — providing the ecclesiastical standing and ministerial formation to walk faithfully in your calling.
+            IOSHA is a spiritual tribe and healing order — a Mother Church empowered to ordain ministers and charter integrated auxiliaries in the ancient and sacred arts of healing.
           </p>
           <p className="text-lg text-stone-500 italic max-w-2xl mx-auto mb-12" style={{ fontFamily: 'var(--font-playfair)' }}>
-            All authentic ministry is healing ministry.
+            United by a shared covenant of healing, not by blood or political jurisdiction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="https://ministerportal.vercel.app/auth/signup" className="bg-stone-900 text-emerald-50 px-12 py-5 text-sm font-bold tracking-widest uppercase hover:bg-emerald-700 transition-all shadow-lg">
@@ -98,52 +101,50 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="h-[1px] w-12 bg-emerald-500/40"></div>
-            <span className="text-emerald-400 text-xs font-bold uppercase tracking-[0.4em]">Our Mission</span>
+            <span className="text-emerald-400 text-xs font-bold uppercase tracking-[0.4em]">Core Mission</span>
             <div className="h-[1px] w-12 bg-emerald-500/40"></div>
           </div>
           <h2 className="text-4xl font-bold text-white mb-8" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Ordain. Educate. <span className="italic font-light text-emerald-400">Equip.</span>
+            To Awaken, Train, Ordain<br /><span className="italic font-light text-emerald-400">and Support Healing Ministers</span>
           </h2>
           <p className="text-lg text-stone-300 max-w-3xl mx-auto mb-6 leading-relaxed">
-            IOSHA exists to recognize, ordain, and form those called to sacred healing ministry. We provide the theological education, ministerial credentials, and covenant framework to serve your community with clarity, integrity, and genuine spiritual authority.
+            We organize not for profit, but for the sacred purposes of worship, healing, education, and charity — to train ministers in the theology, ethics, and practice of spiritual healing arts, and to ordain clergy who serve their communities through the ancient and sacred healing modalities.
           </p>
           <p className="text-stone-400 max-w-2xl mx-auto leading-relaxed">
-            We believe the healer, the herbalist, the sound worker, the counselor, and the ceremonial minister are all expressions of one sacred call — to serve the wholeness of those entrusted to their care.
+            We honor these modalities as religious and spiritual practices — acts of devotion, sacred service, and communion with the Divine Source.
           </p>
-          <div className="grid md:grid-cols-3 gap-6 mt-16 text-left">
-            {[
-              { title: 'Ordination', body: 'We recognize and confer ordained ministerial standing — real ecclesiastical credentials grounded in apostolic succession and documented lineage, recognized in all 50 states.' },
-              { title: 'Education', body: 'Our foundation course and ongoing ministerial formation equip you with the theology, ethics, governance, and pastoral skills to serve faithfully in your calling.' },
-              { title: 'Covenant Community', body: 'Every IOSHA minister is part of a covenant assembly — a fellowship of practitioners sharing theological commitments, ethical standards, and a common understanding of healing as sacred service.' },
-            ].map((p) => (
-              <div key={p.title} className="border border-stone-700 p-8">
-                <h3 className="font-bold text-emerald-400 uppercase text-xs tracking-widest mb-4">{p.title}</h3>
-                <p className="text-stone-300 leading-relaxed text-sm">{p.body}</p>
+
+          {/* Healing Arts */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-16 text-left">
+            {HEALING_ARTS.map((art) => (
+              <div key={art.title} className="border border-stone-700 p-6">
+                <h3 className="font-bold text-emerald-400 uppercase text-xs tracking-widest mb-2">{art.title}</h3>
+                <p className="text-stone-400 text-sm leading-relaxed">{art.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Who It's For */}
+      {/* Statement of Fundamental Truths */}
       <section className="py-24 bg-white border-y border-stone-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="h-[1px] w-12 bg-emerald-600/30"></div>
-              <span className="text-emerald-700 text-xs font-bold uppercase tracking-[0.4em]">Who We Ordain</span>
+              <span className="text-emerald-700 text-xs font-bold uppercase tracking-[0.4em]">Statement of Fundamental Truths</span>
               <div className="h-[1px] w-12 bg-emerald-600/30"></div>
             </div>
             <h2 className="text-4xl font-bold text-stone-900 mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
-              Many Gifts, <span className="italic font-light">One Calling</span>
+              The Foundation of <span className="italic font-light">Our Faith</span>
             </h2>
-            <p className="text-stone-500 max-w-xl mx-auto">IOSHA ordains practitioners across all healing modalities — recognizing each expression of sacred service as genuine ministry.</p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
-            {WHO_ITS_FOR.map((item) => (
-              <div key={item} className="flex items-center gap-3">
-                <span className="text-emerald-600">✦</span>
-                <span className="text-stone-700">{item}</span>
+          <div className="grid md:grid-cols-2 gap-6">
+            {FUNDAMENTAL_TRUTHS.map((truth) => (
+              <div key={truth.title} className="bg-[#FCFAF8] border border-stone-200 p-8">
+                <span className="text-emerald-600 text-lg mb-4 block">✦</span>
+                <h3 className="font-bold text-stone-900 mb-3 uppercase text-xs tracking-widest">{truth.title}</h3>
+                <p className="text-stone-600 leading-relaxed text-sm">{truth.body}</p>
               </div>
             ))}
           </div>
@@ -167,7 +168,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-6">
             {ORDINATION_LEVELS.map((item) => (
               <div key={item.level} className={`p-8 border ${item.featured ? 'border-emerald-600 bg-emerald-50/40 shadow-md' : 'border-stone-200 bg-white shadow-sm'}`}>
-                {item.featured && <div className="text-emerald-700 text-xs font-bold uppercase tracking-widest mb-3">Most Common</div>}
+                {item.featured && <div className="text-emerald-700 text-xs font-bold uppercase tracking-widest mb-3">Most Common Entry</div>}
                 <span className="text-emerald-600 text-lg mb-4 block">✦</span>
                 <h3 className="font-bold text-stone-900 mb-3 uppercase text-sm tracking-widest" style={{ fontFamily: 'var(--font-playfair)' }}>{item.level}</h3>
                 <p className="text-stone-600 text-sm leading-relaxed">{item.description}</p>
@@ -189,7 +190,6 @@ export default function HomePage() {
             <h2 className="text-4xl font-bold text-stone-900 mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
               Credentials, Formation <span className="italic font-light">& Framework</span>
             </h2>
-            <p className="text-stone-500 max-w-xl mx-auto">IOSHA provides ordination, education, and covenant templates. For implementation support — entity formation, banking, and structure setup — the Sacred Ministry Council walks alongside you.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {WHAT_IOSHA_PROVIDES.map((item) => (
@@ -216,10 +216,10 @@ export default function HomePage() {
           </h2>
           <div className="space-y-4 text-left">
             {[
-              { label: 'Apostolic Succession', value: 'IOSHA ordination is grounded in documented ecclesiastical lineage — real church authority with recognized standing.' },
-              { label: '508(c)(1)(A) Faith-Based Organization', value: 'Established as a Florida FBO — your ministry benefits from automatic tax-exempt standing as an integrated auxiliary of the IOSHA assembly.' },
+              { label: 'Mother Church', value: 'IOSHA is empowered as a Mother Church — ordaining ministers and chartering integrated auxiliaries (priories) across all healing modalities.' },
+              { label: '508(c)(1)(A) Faith-Based Organization', value: 'Established as a Florida FBO operating under 508(c)(1)(A) — automatically tax-exempt, sovereign in its internal affairs, organized for religious, charitable, and educational purposes.' },
               { label: 'Nationwide Ministerial Standing', value: 'Your Letter of Direction and ordination credentials are recognized in all 50 states as evidence of your calling and ministerial scope.' },
-              { label: 'Private Faith Assembly Framework', value: 'Those you serve enter into covenant fellowship with your assembly — a sacred relationship governed by covenant principles.' },
+              { label: 'Private Faith Assembly Framework', value: 'Those you serve enter into covenant fellowship with your assembly — a sacred relationship governed by covenant principles, not commercial terms.' },
             ].map((item) => (
               <div key={item.label} className="bg-white border border-stone-200 p-8 flex gap-6 shadow-sm">
                 <span className="text-emerald-600 font-bold text-lg mt-0.5">✦</span>
