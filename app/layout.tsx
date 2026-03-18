@@ -16,8 +16,30 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "IOSHA — International Order of Sacred Healing Arts",
-  description: "IOSHA ordains healing practitioners as ministers of sacred healing arts, providing First Amendment protection and ecclesiastical standing for your practice.",
+  title: "IOSHA — Get Ordained as a Healing Minister | Sacred Healing Arts Ordination",
+  description: "IOSHA ordains energy healers, herbalists, ceremonial ministers, and spiritual practitioners as clergy of the sacred healing arts. Perform weddings, funerals, healing ceremonies, and more — with recognized ministerial credentials in all 50 states.",
+  keywords: [
+    "ordained healing minister",
+    "healing arts ordination",
+    "become ordained minister",
+    "energy healer ordination",
+    "reiki minister credentials",
+    "spiritual ordination online",
+    "ordained healer",
+    "interfaith ordination",
+    "clergy credentials",
+    "ministerial standing all 50 states",
+    "get ordained",
+    "sacred healing ordination",
+    "herbalist ordained minister",
+    "ceremonial minister",
+    "online ordination healing",
+  ],
+  openGraph: {
+    title: "IOSHA — Sacred Healing Arts Ordination",
+    description: "Ordination for energy healers, herbalists, ceremonial ministers, and all healing practitioners. Credentials recognized in all 50 states.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

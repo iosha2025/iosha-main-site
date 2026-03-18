@@ -28,11 +28,26 @@ const ORDINATION_LEVELS = [
 
 const WHAT_IOSHA_PROVIDES = [
   { title: 'Ordination Credentials', description: 'Official IOSHA ordination certificate, credential number, and clergy standing recognized in all 50 states' },
-  { title: 'Letter of Direction', description: 'Your personal ministerial scope document — presented to banks, landlords, and institutions as your stewardship credential' },
+  { title: 'Ministerial Authorization Letter', description: 'A personal ecclesiastical letter defining your ministerial scope — presented to banks, landlords, institutions, and members as your official church credential' },
   { title: 'Foundation Course', description: 'Six weeks of ministerial formation — theology, healing modalities, church governance, covenant framework, and pastoral practice' },
   { title: 'Covenant Templates', description: 'Participation covenants, assembly guidelines, and stewardship standards — everything you need to establish your Private Faith Assembly' },
   { title: 'State-by-State Guidance', description: 'What you may and may not say and do in ministry — by state — so you walk faithfully and clearly in your calling' },
   { title: 'Ongoing Standing', description: 'Annual covenant reaffirmation keeps your credentials current and your standing in the IOSHA assembly active' },
+]
+
+const MINISTER_RIGHTS = [
+  { title: 'Officiate Weddings', description: 'Legally perform and sign marriage ceremonies in all 50 states as recognized clergy.' },
+  { title: 'Conduct Funerals & Memorials', description: 'Lead memorial services, funeral rites, and end-of-life ceremonies for those in your care.' },
+  { title: 'Perform Baptisms & Dedications', description: 'Administer baptism, infant dedication, naming ceremonies, and initiation rites.' },
+  { title: 'Heal Through Sacred Sacrament', description: 'Practice energy healing, laying on of hands, anointing, and healing prayer as recognized sacerdotal acts of your ministry.' },
+  { title: 'Lead Worship & Sacred Gatherings', description: 'Convene healing circles, prayer groups, ceremonies, and community worship as acts of religious service.' },
+  { title: 'Bless Persons, Places & Objects', description: 'Offer blessings of homes, businesses, land, sacred objects, and individuals within your ministerial scope.' },
+  { title: 'Establish a Private Faith Assembly', description: 'Open your own faith-based assembly with covenant membership — your community governed by sacred covenant, not commercial terms.' },
+  { title: 'Open a Church Bank Account', description: 'Present your ordination credentials and Ministerial Authorization Letter to establish a church account for your assembly\'s offerings and stewardship.' },
+  { title: 'Perform Rites of Passage', description: 'Officiate vision quests, coming-of-age ceremonies, seasonal rites, and spiritual milestones for your congregation.' },
+  { title: 'Provide Pastoral Counsel', description: 'Offer spiritual guidance, pastoral care, and faith-based support to your members within your ministerial scope.' },
+  { title: 'Claim Clergy Tax Standing', description: 'As an actively serving ordained minister, access clergy tax treatment including housing allowance designation when properly established.' },
+  { title: 'Conduct Earth-Based Ceremony', description: 'Lead seasonal ceremonies, plant medicine gatherings, and earth-honoring rites as recognized religious practice.' },
 ]
 
 const FUNDAMENTAL_TRUTHS = [
@@ -60,6 +75,7 @@ export default function HomePage() {
             <div className="flex items-center gap-6">
               <a href="#mission" className="text-stone-500 hover:text-emerald-800 text-sm font-semibold tracking-widest uppercase transition-colors hidden md:block">Mission</a>
               <a href="#ordination" className="text-stone-500 hover:text-emerald-800 text-sm font-semibold tracking-widest uppercase transition-colors hidden md:block">Ordination</a>
+              <a href="#minister-rights" className="text-stone-500 hover:text-emerald-800 text-sm font-semibold tracking-widest uppercase transition-colors hidden md:block">Ministry</a>
               <Link href="https://elder-portal.vercel.app/application/welcome" className="bg-stone-900 text-emerald-50 px-6 py-3 text-sm font-bold tracking-widest uppercase hover:bg-emerald-900 transition-all">
                 Apply
               </Link>
@@ -203,6 +219,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Minister Rights */}
+      <section id="minister-rights" className="py-24 bg-[#FCFAF8] border-t border-stone-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-[1px] w-12 bg-emerald-600/30"></div>
+              <span className="text-emerald-800 text-xs font-bold uppercase tracking-[0.4em]">Ministerial Authority</span>
+              <div className="h-[1px] w-12 bg-emerald-600/30"></div>
+            </div>
+            <h2 className="text-4xl font-bold text-stone-900 mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+              What You Are <span className="italic font-light">Authorized to Do</span>
+            </h2>
+            <p className="text-stone-500 max-w-2xl mx-auto">As an ordained IOSHA minister, you hold recognized clergy standing in all 50 states — with the full authority of an ordained minister of the gospel.</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {MINISTER_RIGHTS.map((item) => (
+              <div key={item.title} className="bg-white border border-stone-200 p-6 shadow-sm">
+                <span className="text-emerald-700 text-base mb-3 block">✦</span>
+                <h3 className="font-bold text-stone-900 mb-2 uppercase text-xs tracking-widest">{item.title}</h3>
+                <p className="text-stone-500 text-sm leading-relaxed">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Ecclesiastical Standing */}
       <section className="py-24 bg-[#FCFAF8] border-t border-stone-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -218,7 +260,7 @@ export default function HomePage() {
             {[
               { label: 'Mother Church', value: 'IOSHA is empowered as a Mother Church — ordaining ministers and chartering integrated auxiliaries (priories) across all healing modalities.' },
               { label: '508(c)(1)(A) Faith-Based Organization', value: 'Established as a Florida FBO operating under 508(c)(1)(A) — automatically tax-exempt, sovereign in its internal affairs, organized for religious, charitable, and educational purposes.' },
-              { label: 'Nationwide Ministerial Standing', value: 'Your Letter of Direction and ordination credentials are recognized in all 50 states as evidence of your calling and ministerial scope.' },
+              { label: 'Nationwide Ministerial Standing', value: 'Your Ministerial Authorization Letter and ordination credentials are recognized in all 50 states as evidence of your calling and ministerial scope.' },
               { label: 'Private Faith Assembly Framework', value: 'Those you serve enter into covenant fellowship with your assembly — a sacred relationship governed by covenant principles, not commercial terms.' },
             ].map((item) => (
               <div key={item.label} className="bg-white border border-stone-200 p-8 flex gap-6 shadow-sm">
