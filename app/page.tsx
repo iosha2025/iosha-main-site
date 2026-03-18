@@ -68,24 +68,24 @@ export default function HomePage() {
       </section>
 
       {/* Who it's for */}
-      <section id="who" className="py-24" style={{ backgroundColor: '#122904' }}>
+      <section id="who" className="py-24" style={{ backgroundColor: '#e8f0e4' }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="h-[1px] w-12" style={{ backgroundColor: '#8fa882', opacity: 0.4 }}></div>
-            <span className="text-xs font-bold uppercase tracking-[0.4em]" style={{ color: '#c4d9bb' }}>Is This for You?</span>
-            <div className="h-[1px] w-12" style={{ backgroundColor: '#8fa882', opacity: 0.4 }}></div>
+            <div className="h-[1px] w-12" style={{ backgroundColor: '#1d5306', opacity: 0.3 }}></div>
+            <span className="text-xs font-bold uppercase tracking-[0.4em]" style={{ color: '#1d5306' }}>Is This for You?</span>
+            <div className="h-[1px] w-12" style={{ backgroundColor: '#1d5306', opacity: 0.3 }}></div>
           </div>
-          <h2 className="text-4xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
-            The Path to <span className="italic font-light" style={{ color: '#c4d9bb' }}>Sacred Fellowship</span>
+          <h2 className="text-4xl font-bold mb-4" style={{ fontFamily: 'var(--font-playfair)', color: '#122904' }}>
+            The Path to <span className="italic font-light" style={{ color: '#1d5306' }}>Sacred Fellowship</span>
           </h2>
-          <p className="max-w-xl mx-auto mb-14 leading-relaxed" style={{ color: '#8fa882' }}>
+          <p className="max-w-xl mx-auto mb-14 leading-relaxed" style={{ color: '#4a7038' }}>
             Establishing, protecting, and nurturing sacred healing ministries that honor diverse spiritual traditions — through a covenant process of application and council approval.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
             {HEALING_ARTS.map((art) => (
-              <div key={art.title} className="p-6 border" style={{ borderColor: '#1d5306' }}>
-                <h3 className="font-bold uppercase text-xs tracking-widest mb-2" style={{ color: '#8fa882' }}>{art.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: '#c4d9bb' }}>{art.description}</p>
+              <div key={art.title} className="p-6 border bg-white" style={{ borderColor: '#c4d9bb' }}>
+                <h3 className="font-bold uppercase text-xs tracking-widest mb-2" style={{ color: '#1d5306' }}>{art.title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: '#4a7038' }}>{art.description}</p>
               </div>
             ))}
           </div>
@@ -122,9 +122,9 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Minister rights — dark forest block */}
-          <div className="p-10" style={{ backgroundColor: '#122904' }}>
-            <h3 className="text-xs font-bold uppercase tracking-widest mb-6" style={{ color: '#8fa882' }}>As an ordained IOSHA minister, you are authorized to:</h3>
+          {/* Minister rights */}
+          <div className="p-10 border" style={{ backgroundColor: '#FCFAF8', borderColor: '#c4d9bb' }}>
+            <h3 className="text-xs font-bold uppercase tracking-widest mb-6" style={{ color: '#1d5306' }}>As an ordained IOSHA minister, you are authorized to:</h3>
             <div className="grid md:grid-cols-2 gap-x-12 gap-y-3">
               {[
                 'Officiate weddings in all 50 states',
@@ -140,8 +140,8 @@ export default function HomePage() {
                 'Claim clergy tax standing as an actively serving minister',
               ].map((right) => (
                 <div key={right} className="flex items-start gap-3 py-1">
-                  <span className="mt-0.5 text-xs" style={{ color: '#4a7038' }}>✦</span>
-                  <span className="text-sm" style={{ color: '#c4d9bb' }}>{right}</span>
+                  <span className="mt-0.5 text-xs" style={{ color: '#1d5306' }}>✦</span>
+                  <span className="text-sm" style={{ color: '#4a7038' }}>{right}</span>
                 </div>
               ))}
             </div>
@@ -165,7 +165,7 @@ export default function HomePage() {
               { n: '03', title: 'Ordainment', body: 'If not already ordained, complete the Foundation Ordination Course to receive your ministerial credentials through IOSHA.' },
             ].map((item) => (
               <div key={item.n} className="text-center">
-                <span className="text-6xl font-bold mb-6 block italic" style={{ fontFamily: 'var(--font-playfair)', color: '#e8f0e4' }}>{item.n}</span>
+                <span className="text-6xl font-bold mb-6 block italic" style={{ fontFamily: 'var(--font-playfair)', color: '#c4d9bb' }}>{item.n}</span>
                 <h3 className="text-2xl font-bold mb-4 uppercase tracking-widest" style={{ fontFamily: 'var(--font-playfair)', color: '#122904' }}>{item.title}</h3>
                 <p className="leading-relaxed" style={{ color: '#4a7038' }}>{item.body}</p>
               </div>
@@ -193,25 +193,25 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 border-t" style={{ backgroundColor: '#122904', borderColor: '#1d5306' }}>
+      <footer className="py-12 bg-white border-t" style={{ borderColor: '#c4d9bb' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
             <div className="flex items-center gap-4">
-              <Image src="/iosha-logo.png" alt="IOSHA" width={120} height={120} className="object-contain brightness-0 invert" />
+              <Image src="/iosha-logo.png" alt="IOSHA" width={120} height={120} className="object-contain" />
               <div>
-                <div className="font-bold tracking-[0.2em] text-sm text-white" style={{ fontFamily: 'var(--font-playfair)' }}>IOSHA</div>
-                <div className="text-[9px] tracking-widest uppercase mt-1" style={{ color: '#4a7038' }}>International Order of Sacred Healing Arts</div>
+                <div className="font-bold tracking-[0.2em] text-sm" style={{ fontFamily: 'var(--font-playfair)', color: '#122904' }}>IOSHA</div>
+                <div className="text-[9px] tracking-widest uppercase mt-1" style={{ color: '#8fa882' }}>International Order of Sacred Healing Arts</div>
               </div>
             </div>
             <div className="flex gap-8 text-sm">
-              <Link href="https://ministerportal.vercel.app" className="transition-colors" style={{ color: '#8fa882' }}>Minister Portal</Link>
-              <Link href="https://elder-portal.vercel.app" className="transition-colors" style={{ color: '#8fa882' }}>Elder Portal</Link>
-              <Link href="https://elder-portal.vercel.app/application/welcome" className="font-semibold text-white">Apply</Link>
+              <Link href="https://ministerportal.vercel.app" className="transition-colors" style={{ color: '#4a7038' }}>Minister Portal</Link>
+              <Link href="https://elder-portal.vercel.app" className="transition-colors" style={{ color: '#4a7038' }}>Elder Portal</Link>
+              <Link href="https://elder-portal.vercel.app/application/welcome" className="font-semibold" style={{ color: '#1d5306' }}>Apply</Link>
             </div>
           </div>
-          <div className="pt-6 flex flex-col md:flex-row justify-between items-center gap-2" style={{ borderTop: '1px solid #1d5306' }}>
-            <p className="text-xs" style={{ color: '#4a7038' }}>© 2025–2026 IOSHA — International Order of Sacred Healing Arts. All rights reserved.</p>
-            <p className="text-xs" style={{ color: '#2d5018' }}>A 508(c)(1)(A) Faith-Based Organization</p>
+          <div className="pt-6 flex flex-col md:flex-row justify-between items-center gap-2" style={{ borderTop: '1px solid #e8f0e4' }}>
+            <p className="text-xs" style={{ color: '#8fa882' }}>© 2025–2026 IOSHA — International Order of Sacred Healing Arts. All rights reserved.</p>
+            <p className="text-xs" style={{ color: '#8fa882' }}>A 508(c)(1)(A) Faith-Based Organization</p>
           </div>
         </div>
       </footer>
