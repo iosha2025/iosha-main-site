@@ -28,7 +28,7 @@ const ORDINATION_LEVELS = [
 
 const WHAT_IOSHA_PROVIDES = [
   { title: 'Ordination Credentials', description: 'Your official certificate, credential number, and clergy standing — recognized in all 50 states. Present it anywhere a minister\'s credentials are asked for.' },
-  { title: 'Ministerial Authorization Letter', description: 'A personal letter from IOSHA defining your specific healing scope — bring it to your bank, your landlord, your members. It speaks for your ministry so you don\'t have to explain yourself.' },
+  { title: 'Ministerial Authorization Letter', description: 'A personal letter from IOSHA defining your specific healing scope — presented to institutions and members as your official credential. It speaks for your ministry so you don\'t have to explain yourself.' },
   { title: 'Foundation Course', description: 'Six weeks of real formation — not busy work. Theology, healing practice, how to set up your assembly, how to protect your work. Built for working healers.' },
   { title: 'Covenant Templates', description: 'Member agreements, assembly guidelines, stewardship documents — everything you need to open your Private Faith Assembly, ready to customize.' },
   { title: 'State-by-State Guidance', description: 'Plain-language guidance on what you can say and do in your state — so you can move confidently in your practice.' },
@@ -43,7 +43,6 @@ const MINISTER_RIGHTS = [
   { title: 'Lead Worship & Sacred Gatherings', description: 'Convene healing circles, prayer groups, ceremonies, and community worship as acts of religious service.' },
   { title: 'Bless Persons, Places & Objects', description: 'Offer blessings of homes, businesses, land, sacred objects, and individuals within your ministerial scope.' },
   { title: 'Establish a Private Faith Assembly', description: 'Open your own faith-based assembly with covenant membership — your community governed by sacred covenant, not commercial terms.' },
-  { title: 'Open a Church Bank Account', description: 'Present your ordination credentials and Ministerial Authorization Letter to establish a church account for your assembly\'s offerings and stewardship.' },
   { title: 'Perform Rites of Passage', description: 'Officiate vision quests, coming-of-age ceremonies, seasonal rites, and spiritual milestones for your congregation.' },
   { title: 'Provide Pastoral Counsel', description: 'Offer spiritual guidance, pastoral care, and faith-based support to your members within your ministerial scope.' },
   { title: 'Claim Clergy Tax Standing', description: 'As an actively serving ordained minister, access clergy tax treatment including housing allowance designation when properly established.' },
