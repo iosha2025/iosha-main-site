@@ -27,7 +27,7 @@ export default function HomePage() {
                 <div className="text-[10px] tracking-widest uppercase mt-1" style={{ color: G }}>International Order of Sacred Healing Arts</div>
               </div>
             </div>
-            <Link href="https://elder-portal.vercel.app/application/welcome"
+            <Link href="/application/welcome"
               className="btn-forest px-8 py-3 text-sm font-bold tracking-widest uppercase shadow">
               Apply Now
             </Link>
@@ -50,7 +50,7 @@ export default function HomePage() {
             Establishing, protecting, and nurturing sacred healing ministries that honor diverse spiritual traditions.
           </p>
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
-            <Link href="https://elder-portal.vercel.app/application/welcome"
+            <Link href="/application/welcome"
               className="btn-forest px-12 py-5 font-bold text-sm tracking-[0.2em] uppercase shadow-lg">
               Begin Your Application
             </Link>
@@ -177,7 +177,7 @@ export default function HomePage() {
           <p className="text-lg mb-10 max-w-xl mx-auto leading-relaxed" style={{ color: '#c4d9bb' }}>
             Many of us have been doing this work for years without standing, without community, without anyone who truly gets it. That ends here.
           </p>
-          <Link href="https://elder-portal.vercel.app/application/welcome"
+          <Link href="/application/welcome"
             className="px-14 py-5 text-sm font-bold tracking-widest uppercase shadow-lg inline-block"
             style={{ backgroundColor: 'white', color: G }}>
             Apply for Ordination
@@ -197,7 +197,7 @@ export default function HomePage() {
             <div className="flex gap-8 text-sm">
               <Link href="https://ministerportal.vercel.app" className="text-white opacity-70 hover:opacity-100">Minister Portal</Link>
               <Link href="https://elder-portal.vercel.app" className="text-white opacity-70 hover:opacity-100">Elder Portal</Link>
-              <Link href="https://elder-portal.vercel.app/application/welcome" className="text-white font-semibold">Apply</Link>
+              <Link href="/application/welcome" className="text-white font-semibold">Apply</Link>
             </div>
           </div>
           <div className="pt-6 flex flex-col md:flex-row justify-between items-center gap-2" style={{ borderTop: '1px solid rgba(255,255,255,0.2)' }}>
