@@ -169,7 +169,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-28" style={{ backgroundColor: G }}>
+      <section className="pt-20 pb-14" style={{ backgroundColor: G }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-5xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-playfair)' }}>
             You don&apos;t have to<br /><span className="italic font-light">do this alone.</span>
